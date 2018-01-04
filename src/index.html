@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>AppMigrated v2</title>
   <base href="/">
-
 
   <!-- cx -->
   <script src="ng1/lib/angular.js"></script>
@@ -19,15 +19,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-    <a href="#/users">users</a>
-    <a href="#/groups">groups</a>
-    <a href="#/ng5-demo">angular 5 component</a>
-    
-    <body>
-  
-    
-    <ng-view></ng-view>
+  <div class="container">
+    <div class="row">
+      <p>This application shows a hybrid app where there are angularJS and angular components mixed. We are using 2 routers,
+        one for each angular. The idea would be to convert the angularJS routes to angular over time</p>
+
+    </div>
+    <div class="row">
+      <a style="color: red" href="#/users">users (angularJS)&nbsp;&nbsp;</a>
+      <a style="color: red" href="#/groups">groups (angularJS)&nbsp;&nbsp;</a>
+      <a style="color: red" href="#/ng5-demo">angular 5 component downgraded to (angularJS)&nbsp;&nbsp;</a>
+      <a style="color: green" href="#" routerLink="requests">requests (angular)&nbsp;&nbsp;</a>
+    </div>
+    <div class="row">
+      <app-root></app-root>
+    </div>
+  </div>
 
 </body>
+
 </html>

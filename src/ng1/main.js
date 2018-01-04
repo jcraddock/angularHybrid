@@ -46,9 +46,7 @@ app.config(['$routeProvider', function($routeProvider) {
       template: '<ng5-demo></ng5-demo>' // Angular component
     }).               
     otherwise({
-        redirectTo: '/',
-        controller: 'users',
-        templateUrl: 'ng1/views/users.html'
+        template: ''
     });
 }]);
 
