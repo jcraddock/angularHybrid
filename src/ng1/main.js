@@ -42,8 +42,8 @@ app.config(['$routeProvider', function($routeProvider) {
         controller: 'users',
         templateUrl: 'ng1/views/users.html'
     }).  
-    when('/ng2-demo', {
-      template: '<app-root></app-root>' // Angular component
+    when('/ng5-demo', {
+      template: '<ng5-demo></ng5-demo>' // Angular component
     }).               
     otherwise({
         redirectTo: '/',

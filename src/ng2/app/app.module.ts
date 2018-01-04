@@ -3,25 +3,27 @@ import { NgModule } from '@angular/core';
 import { UpgradeModule, downgradeComponent } from '@angular/upgrade/static';
 
 import { AppComponent } from './app.component';
+import { Ng5DemoComponent } from './ng5-demo.component';
 
 declare var angular: any;
 
 angular.module('cxApp')
   .directive(
-    'appRoot',
-    downgradeComponent({component: AppComponent})
+  'ng5Demo',
+  downgradeComponent({ component: Ng5DemoComponent })
   );
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Ng5DemoComponent
   ],
   imports: [
     BrowserModule,
     UpgradeModule
   ],
   entryComponents: [
-    AppComponent // Don't forget this!!!
+    Ng5DemoComponent // Don't forget this!!!
   ],
   providers: [],
   // bootstrap: [AppComponent]
